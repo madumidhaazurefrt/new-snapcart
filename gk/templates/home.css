@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .offer-card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .offer-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .offer-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .offer-details {
+    padding: 20px;
+    background: transparent;
+  }
+  
+  .offer-title {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  .offer-description {
+    color: #666;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #digital-clock {
+    font-size: 3em; /* Set a larger font size */
+    font-family: 'Roboto', sans-serif; /* Use a Google Font for a modern look */
+    color: #ffffff; /* Set text color to white */
+    background-color: transparent;
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
+    text-align: center; /* Center-align the text */
+    display: inline-block; /* Make the clock behave as a block element */
+}
+
+#digital-clock:after {
+    content: ""; /* Create a pseudo-element */
+    display: block;
+    clear: both;
+}
+
+#digital-clock .time {
+    font-weight: bold; /* Set font weight to bold */
+}
+
+#digital-clock .time span {
+    display: inline-block; /* Make each time unit (hours, minutes, seconds) a block element */
+    margin: 0 10px; /* Add margin for spacing between time units */
+}
+
+#digital-clock .time span:first-child {
+    margin-left: 0; /* Remove left margin for the first time unit */
+}
+
+#digital-clock .time span:last-child {
+    margin-right: 0; /* Remove right margin for the last time unit */
+}
+
+#digital-clock .date {
+    font-size: 0.5em; /* Set a smaller font size for the date */
+    margin-top: 10px; /* Add margin to separate the date from the time */
+}
+
+
+  
+  .hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:url(img/homepg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw,100vh;
+    background-position: center;
+    overflow: hidden;
+    color: white;
+    
+    
+    
+    
+
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #loginBtn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  #registerBtn {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+  
+    .nav-links.open {
+      transform: translateX(0%);
+    }
+  
+    .burger {
+      display: block;
+      cursor: pointer;
+    }
+  
+      
+  
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+  }
+  
