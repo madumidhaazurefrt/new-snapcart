@@ -53,7 +53,8 @@
   
   .offer-details {
     padding: 20px;
-    background: transparent;
+    background:transparent;
+   
   }
   
   .offer-title {
@@ -131,17 +132,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image:url(img/homepg.jpg);
+    background-image:url(../static/img/homepage.jpg);
     background-repeat: no-repeat;
     background-size: 100vw,100vh;
     background-position: center;
     overflow: hidden;
     color: white;
-    
-    
-    
-    
-
   }
   
   .buttons {
