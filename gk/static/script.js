@@ -158,11 +158,6 @@ function disablePlaceOrderButton() {
   document.getElementById("placeOrderBtn").disabled = true;
 }
 
-// Call this function when products are added to the cart
-// For example:
-// enablePlaceOrderButton();
-// or
-// disablePlaceOrderButton();
 
 const darkModeToggle = document.getElementById('darkModeToggle');
 
@@ -171,7 +166,6 @@ darkModeToggle.addEventListener('change', () => {
     localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
 });
 
-// Check if dark mode is saved in localStorage and set it accordingly
 if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
     darkModeToggle.checked = true;
